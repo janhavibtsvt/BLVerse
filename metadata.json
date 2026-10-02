@@ -1,0 +1,6 @@
+{
+  "name": "BLVerse",
+  "description": "Discover the stories behind the stories. An entertainment discovery and intelligence platform for BL live-action series, manga, manhwa, manhua, novels, and cross-media adaptations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

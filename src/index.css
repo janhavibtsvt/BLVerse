@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+
+  /* BLVerse Midnight Romance Palette */
+  --color-midnight: #0B0712;
+  --color-plum: #160D20;
+  --color-violet-deep: #241238;
+  --color-violet-border: #381E57;
+  --color-lavender: #B794F4;
+  --color-purple-soft: #9F7AEA;
+  --color-pink-romantic: #F09BC5;
+  --color-rose: #E879A9;
+  --color-lilac: #D8B4FE;
+  --color-moon: #F8F5FC;
+  --color-lavender-muted: #B8AFC4;
+  --color-charcoal: #17131C;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0712;
+    color: #F8F5FC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom dark scrollbars with purple glow */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0712;
+}
+::-webkit-scrollbar-thumb {
+  background: #241238;
+  border-radius: 9999px;
+  border: 1px solid rgba(183, 148, 244, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9F7AEA;
+}
+
+/* Atmospheric Glow Effects */
+.bl-glow-card {
+  box-shadow: 0 8px 32px 0 rgba(36, 18, 56, 0.37);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bl-glow-card:hover {
+  box-shadow: 0 14px 44px 0 rgba(159, 122, 234, 0.25), 0 0 20px 0 rgba(240, 155, 197, 0.15);
+}
+
+.bl-gradient-text {
+  background: linear-gradient(135deg, #F8F5FC 0%, #D8B4FE 45%, #F09BC5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bl-gradient-badge {
+  background: linear-gradient(135deg, rgba(159, 122, 234, 0.25) 0%, rgba(240, 155, 197, 0.2) 100%);
+  border: 1px solid rgba(240, 155, 197, 0.35);
+  color: #F8F5FC;
+}
+
+.bl-signature-btn {
+  background: linear-gradient(135deg, #9F7AEA 0%, #E879A9 50%, #F09BC5 100%);
+  color: #0B0712;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(240, 155, 197, 0.35);
+  transition: all 0.3s ease;
+}
+
+.bl-signature-btn:hover {
+  background: linear-gradient(135deg, #B794F4 0%, #F09BC5 50%, #F8F5FC 100%);
+  box-shadow: 0 6px 28px rgba(240, 155, 197, 0.55);
+  transform: translateY(-1px);
+}
+
